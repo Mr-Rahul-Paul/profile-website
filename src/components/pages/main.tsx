@@ -3,12 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const achievements = [
-    { icon: "🏆", title: "Hackathon Winner", description: "1st place in a university-level coding competition." },
-    { icon: "🛠️", title: "Backend OTP Auth System", description: "Built with Node.js, Express, and TypeScript." },
-    { icon: "⚙️", title: "RDKit Chemistry Simulation", description: "Integrated RDKit with a backend to run simulations." },
-    { icon: "🎨", title: "McLaren 3D Animation", description: "Modeled and animated a McLaren scene in Blender." },
-    { icon: "🤖", title: "Battle Bot Design", description: "Designed and built a roller-type bot for Robo Wars." },
-    { icon: "🧠", title: "Personal Arch Linux Setup", description: "Customized Arch environment with install scripts." },
+    { icon: "🏆", title: "Hackathon Winner", description: "1st place in a major hackathon in Open Innovation" },
+    
 ];
 
 const skillsData = {
