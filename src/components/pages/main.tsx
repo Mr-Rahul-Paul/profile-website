@@ -38,7 +38,7 @@ export default function Main() {
 
                         <div className="flex-shrink-0 pt-15 ">
                             <Image
-                                src="/profile.jpg"
+                                src="/profile.png"
                                 alt="Profile"
                                 height={200}
                                 width={200}
