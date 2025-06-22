@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 
 const achievements = [
     { icon: "🏆", title: "Hackathon Winner", description: "1st place in a major hackathon in Open Innovation" },
-    
+
 ];
 
 const skillsData = {
@@ -15,8 +15,10 @@ const skillsData = {
 
 export default function Main() {
     return (
-        <div className="min-h-screen bg-background text-foregroun pt-20">
-            <div className="max-w-[850px] mx-auto px-6 py-12">
+        <div className="min-h-screen bg-transparent text-foreground pt-21">
+            <Image src="/BG_BLACK.png" alt="bg" width={1920} height={1080} className="absolute top-0 left-0 w-full h-screen object-cover -z-10"></Image>
+            <Image src="/BG2_BLACK.png" alt="bg" width={1920} height={1080} className="absolute top-[100vh] left-0 w-full h-screen object-cover -z-10"></Image>
+            <div className="relative max-w-[850px] mx-auto px-6 py-12">
                 {/* Hero */}
                 <section className="mb-16">
                     <div className="flex flex-col lg:flex-row items-start gap-20">
@@ -34,13 +36,13 @@ export default function Main() {
                             </div>
                         </div>
 
-                        <div className="flex-shrink-0 pt-12">
+                        <div className="flex-shrink-0 pt-15 ">
                             <Image
                                 src="/profile.jpg"
                                 alt="Profile"
-                                width={180}
-                                height={180}
-                                className="rounded-full object-cover shadow-lg"
+                                height={200}
+                                width={200}
+                                className="rounded-full object-cover shadow-lg border-[5px] border-white/85 p-[10px]"
                             />
                         </div>
                     </div>
@@ -51,9 +53,9 @@ export default function Main() {
                     <h2 className="text-2xl font-bold mb-8 text-white">
                         Achievements & Projects
                     </h2>
-                    <div className="space-y-4">
+                    <div className="space-y-4 ">
                         {achievements.map((item) => (
-                            <div key={item.title} className="clean-card">
+                            <div key={item.title} className=" px-9 py-5 bg-zinc-900 hover:scale-105 transition-all duration-150 border-[1px] border-white/20 rounded-full">
                                 <div className="flex items-start gap-4">
                                     <div className="text-2xl pt-1">{item.icon}</div>
                                     <div>
@@ -70,7 +72,7 @@ export default function Main() {
                 <section className="mb-16">
                     <h2 className="text-2xl font-bold mb-8 text-white">Education</h2>
                     <div className="space-y-4">
-                        <div className="clean-card">
+                        <div className="px-9 py-5 bg-zinc-900 hover:scale-105 transition-all duration-300 border-[1px] border-white/20 rounded-2xl">
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center gap-4">
                                     <div className="w-10 h-10 bg-muted rounded flex items-center justify-center text-white font-semibold">
@@ -87,7 +89,7 @@ export default function Main() {
                             </div>
                         </div>
 
-                        <div className="clean-card">
+                        <div className="px-9 py-5 bg-zinc-900 hover:scale-105 transition-all duration-300 border-[1px] border-white/20 rounded-2xl">
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center gap-4">
                                     <Image
@@ -147,61 +149,10 @@ export default function Main() {
                                     </div>
                                 </div>
                             ))}
+
                         </div>
                     </div>
                 </section>
             </div >
-
-            {/* Social Links Bar */}
-            < footer className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-card border border-border rounded-lg px-6 py-3 flex gap-6 items-center shadow-lg" >
-                <a
-                    href="#"
-                    title="Home"
-                    className="text-muted-foreground hover:text-white transition-colors"
-                >
-                    <span className="i-lucide-home text-lg" />
-                </a>
-                <a
-                    href="#"
-                    title="Resume"
-                    className="text-muted-foreground hover:text-white transition-colors"
-                >
-                    <span className="i-lucide-notebook text-lg" />
-                </a>
-                <a
-                    href="#"
-                    title="GitHub"
-                    className="text-muted-foreground hover:text-white transition-colors"
-                >
-                    <span className="i-lucide-github text-lg" />
-                </a>
-                <a
-                    href="#"
-                    title="LinkedIn"
-                    className="text-muted-foreground hover:text-white transition-colors"
-                >
-                    <span className="i-lucide-linkedin text-lg" />
-                </a>
-                <a
-                    href="#"
-                    title="X"
-                    className="text-muted-foreground hover:text-white transition-colors"
-                >
-                    <span className="i-lucide-twitter text-lg" />
-                </a>
-                <a
-                    href="#"
-                    title="Email"
-                    className="text-muted-foreground hover:text-white transition-colors"
-                >
-                    <span className="i-lucide-mail text-lg" />
-                </a>
-                <button
-                    title="Toggle theme"
-                    className="text-muted-foreground hover:text-white transition-colors"
-                >
-                    <span className="i-lucide-moon-star text-lg" />
-                </button>
-            </footer >
         </div >)
 }
