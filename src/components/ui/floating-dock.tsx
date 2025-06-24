@@ -112,7 +112,7 @@ const FloatingDockDesktop = ({
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
         // here we control pos and all 
-        "fixed bottom-4 top-[4vh] left-1/2 z-50 -translate-x-1/2 mx-auto hidden h-16 items-end gap-4 rounded-4xl hover:rounded-full border-[2px] border-white/20 hover:h-18  transition-all duration-250 bg-gray-50 px-4 pb-3 md:flex dark:bg-neutral-900",
+        "shadow-xl fixed bottom-4 top-[4vh] left-1/2 z-50 -translate-x-1/2 mx-auto hidden h-16 items-end gap-4 rounded-4xl hover:rounded-full border-[2px] border-white/20 hover:h-18  transition-all duration-250 bg-gray-50 px-4 pb-3 md:flex dark:bg-neutral-900",
         className,
       )}
     >
@@ -213,3 +213,4 @@ function IconContainer({
 
   return <a href={href}>{content}</a>;
 }
+ 

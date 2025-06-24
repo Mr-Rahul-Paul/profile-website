@@ -3,6 +3,7 @@ import Main from "@/components/pages/main";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import { IconBriefcase, IconBrandInstagram, IconMail, IconBrandGithub, IconBrandLinkedinFilled } from "@tabler/icons-react";
 import { useState } from "react";
+
 // Sheet
 import {
   Sheet,
@@ -57,9 +58,8 @@ export default function Home() {
           </SheetHeader>
         </SheetContent>
       </Sheet>
-
       <Main />
-
+      
     </>
   );
 }
