@@ -14,14 +14,17 @@ export default function Main() {
             <div className="relative max-w-[850px] mx-auto px-6 py-12 ">
                 {/* Hero */}
                 <section className="mb-16">
-                    <div className="flex flex-col sm:row sm:grid-cols-2 lg:flex-row items-start gap-20">
+                    <div className="flex flex-col sm:row md:grid-cols-2 lg:flex-row gap-20 md:flex-col lex justify-center items-center ">
                         <div className="flex-1">
-                            <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-white">
-                                Yo! Paul here
-                            </h1>
+                            {/* wrap in a div to move text as i please wish lesss gooo */}
+                            <div className="flex justify-center lg:justify-start">
+                                <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-white text-center lg:text-left">
+                                    Yo! Paul here
+                                </h1>
+                            </div>
                             <div className="mb-8">
-                                <h2 className="text-xl font-semibold mb-4 text-white">About me</h2>
-                                <div className="text-lg text-muted-foreground space-y-2">
+                                <h2 className="text-xl font-semibold mb-4 text-white sm:text-center lg:text-left">About me</h2>
+                                <div className="text-lg text-muted-foreground space-y-2 md:text-left ">
                                     <p>Building with passion, from <strong className="font-semibold text-white">backend systems</strong> to <strong className="font-semibold text-white">smart contracts</strong>.</p>
                                     <p>Drawn to <strong className="font-semibold text-white">dev tooling</strong>, <strong className="font-semibold text-white">low-level optimization</strong>, and complex puzzles.</p>
                                     <p>Currently exploring <strong className="font-semibold text-white">Rust</strong>, <strong className="font-semibold text-white">Linux internals</strong>, and <strong className="font-semibold text-white">Solana</strong>.</p>
@@ -29,7 +32,7 @@ export default function Main() {
                             </div>
                         </div>
 
-                        <div className="flex-shrink-0 sm:pt-2 pt-15 ">
+                        <div className="flex-shrink-0 lg:pt-15 f">
                             <Image
                                 src="/profile.png"
                                 alt="Profile"
@@ -39,10 +42,10 @@ export default function Main() {
                             />
                         </div>
                     </div>
-                    <Achievements />
-                    <Education />
-                    <EmailandSkills />
                 </section>
+                <Achievements />
+                <Education />
+                <EmailandSkills />
             </div>
         </div>
     )

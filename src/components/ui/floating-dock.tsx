@@ -47,24 +47,24 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("fixed bottom-4 left-1/2 z-50 -translate-x-1/2 block md:hidden", className)}>
+    <div className={cn("fixed top-[4vh] bottom-4  left-1/20 z-50  block md:hidden", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute inset-x-0 bottom-full mb-2 flex flex-col gap-2"
+            className="absolute left-full top-0 ml-2 flex flex-row gap-2"
           >
             {items.map((item, idx) => (
               <motion.div
                 key={item.title}
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, x: -20 }}
                 animate={{
                   opacity: 1,
-                  y: 0,
+                  x: 0,
                 }}
                 exit={{
                   opacity: 0,
-                  y: 10,
+                  x: -20,
                   transition: {
                     delay: idx * 0.05,
                   },
@@ -190,7 +190,7 @@ function IconContainer({
         {hovered && (
           <motion.div
             initial={{ opacity: 0, y: 0, x: "-50%" }}
-            animate={{ opacity: 1, y: 120 , x: "-50%" }}
+            animate={{ opacity: 1, y: 120, x: "-50%" }}
             exit={{ opacity: 0.01, y: 100, x: "-50%" }}
             className="absolute -top-8 left-1/2 w-fit rounded-md border border-gray-200 bg-gray-100 px-2 py-0.5 text- whitespace-pre text-neutral-700 dark:border-neutral-900 dark:bg-neutral-800 dark:text-white"
           >
@@ -213,4 +213,3 @@ function IconContainer({
 
   return <a href={href}>{content}</a>;
 }
- 
