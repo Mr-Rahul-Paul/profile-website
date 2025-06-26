@@ -6,12 +6,12 @@ const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID ;
 
 export async function POST(req: NextRequest) {
     try {
-        const { name, message } = await req.json();
-        if (!name || !message) {
+        const { name, message ,email } = await req.json();
+        if (!name || !message || !email) {
             return NextResponse.json({ error: 'Name and message are required' }, { status: 400 });
         }
 
-        const text = `New message from: ${name}\n\n${message}`;
+        const text = `New message from: ${name}\n\n${message}\n\nEmail: ${email}`;
 
         const telegramRes = await fetch(
             `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
