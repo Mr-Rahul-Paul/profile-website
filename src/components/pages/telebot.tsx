@@ -80,7 +80,7 @@ export default function Telebot() {
               <Button
                 type="submit"
                 variant="clean"
-                className="font-medium"
+                className="font-medium px-6 py-2 text-sm w-[150px] mx-auto"
                 disabled={loading}
               >
                 {loading ? "Sending..." : "Send Message"}

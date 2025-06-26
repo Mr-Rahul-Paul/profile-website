@@ -1,7 +1,7 @@
 "use client";
 import Main from "@/components/pages/main";
 import { FloatingDock } from "@/components/ui/floating-dock";
-import { IconBriefcase, IconBrandInstagram, IconMail, IconBrandGithub, IconBrandLinkedinFilled } from "@tabler/icons-react";
+import { IconBriefcase, IconBrandX, IconMail, IconBrandGithub, IconBrandLinkedinFilled } from "@tabler/icons-react";
 import { useState } from "react";
 
 // Sheet
@@ -33,8 +33,8 @@ export default function Home() {
       href: "https://github.com/Mr-Rahul-Paul?tab=repositories",
     },
     {
-      title: "Instagram",
-      icon: <IconBrandInstagram className="h-full w-full" />,
+      title: "X.com",
+      icon: <IconBrandX className="h-full w-full" />,
       href: "https://www.instagram.com/rahulpaul.3d",
     },
     {
