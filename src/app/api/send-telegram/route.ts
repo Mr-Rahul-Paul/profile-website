@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const TELEGRAM_BOT_TOKEN = '8015813610:AAGegaHYBaZ-lLG1tAJSX_h2gYtkTfBx-7U';
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 // TODO: Replace with your actual chat ID (user or group)
-const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '1127594116';
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID ;
 
 export async function POST(req: NextRequest) {
     try {
