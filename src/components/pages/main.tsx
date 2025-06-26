@@ -40,7 +40,7 @@ export default function Main() {
                         <motion.div className="flex-shrink-0 lg:pt-15 f"
                             
                         >
-                            <a href="https://x.com/_Rahul_Paul">
+                            <a href="https://x.com/_Rahul_Paul" target="_blank" >
                                 <motion.div
                                     // wrap in a div and added hover animation
                                     whileHover={{
