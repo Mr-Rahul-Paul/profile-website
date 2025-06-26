@@ -47,7 +47,12 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("fixed top-[4vh] bottom-4  left-1/20 z-50  block md:hidden", className)}>
+    <div
+      className={cn(
+        "fixed top-[4vh] bottom-4  left-1/20 z-50  block md:hidden",
+        className
+      )}
+    >
       <AnimatePresence>
         {open && (
           <motion.div
@@ -111,9 +116,9 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        // here we control pos and all 
+        // here we control pos and all
         "shadow-xl fixed bottom-4 top-[4vh] left-1/2 z-50 -translate-x-1/2 mx-auto hidden h-16 items-end gap-4 rounded-4xl hover:rounded-full border-[2px] border-white/20 hover:h-18  transition-all duration-250 bg-gray-50 px-4 pb-3 md:flex dark:bg-neutral-900",
-        className,
+        className
       )}
     >
       {items.map((item) => (
@@ -136,41 +141,45 @@ function IconContainer({
   href: string;
   onClick?: () => void;
 }) {
-  let ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
-  let distance = useTransform(mouseX, (val) => {
-    let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
+  const distance = useTransform(mouseX, (val) => {
+    const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
 
     return val - bounds.x - bounds.width / 2;
   });
 
-  let widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
-  let heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+  const widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+  const heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
 
-  let widthTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
-  let heightTransformIcon = useTransform(
+  const widthTransformIcon = useTransform(
     distance,
     [-150, 0, 150],
-    [20, 40, 20],
+    [20, 40, 20]
+  );
+  const heightTransformIcon = useTransform(
+    distance,
+    [-150, 0, 150],
+    [20, 40, 20]
   );
 
-  let width = useSpring(widthTransform, {
+  const width = useSpring(widthTransform, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
-  let height = useSpring(heightTransform, {
+  const height = useSpring(heightTransform, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
 
-  let widthIcon = useSpring(widthTransformIcon, {
+  const widthIcon = useSpring(widthTransformIcon, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
-  let heightIcon = useSpring(heightTransformIcon, {
+  const heightIcon = useSpring(heightTransformIcon, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
@@ -211,5 +220,9 @@ function IconContainer({
     return <button onClick={onClick}>{content}</button>;
   }
 
-  return <a href={href}>{content}</a>;
+  return (
+    <a href={href} target="_blank">
+      {content}
+    </a>
+  );
 }
