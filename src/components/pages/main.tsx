@@ -27,7 +27,7 @@ export default function Main() {
         alt="bg"
         width={1920}
         height={1080}
-        className="absolute top-[200vh] left-0 w-full h-[75vh] object-cover -z-10"
+        className="absolute top-[197vh] left-0 w-full h-[75vh] object-cover -z-10"
       ></Image>
       {/* Gradient overlay after BG2_BLACK.png */}
       <div className="relative max-w-[850px] mx-auto px-6 py-12 ">

@@ -1,8 +1,17 @@
 "use client";
 import Main from "@/components/pages/main";
 import { FloatingDock } from "@/components/ui/floating-dock";
-import { IconBriefcase, IconBrandX, IconMail, IconBrandGithub, IconBrandLinkedinFilled } from "@tabler/icons-react";
+import Sheetcontent from "@/components/pages/sheetcontent";
+import {
+  IconBriefcase,
+  IconBrandX,
+  IconMail,
+  IconBrandGithub,
+  IconBrandLinkedinFilled,
+
+} from "@tabler/icons-react";
 import { useState } from "react";
+
 
 // Sheet
 import {
@@ -11,7 +20,8 @@ import {
   SheetDescription,
   SheetHeader,
   SheetTitle,
-} from "@/components/ui/sheet"
+  
+} from "@/components/ui/sheet";
 
 export default function Home() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -35,7 +45,7 @@ export default function Home() {
     {
       title: "X.com",
       icon: <IconBrandX className="h-full w-full" />,
-      href: "https://www.instagram.com/rahulpaul.3d",
+      href: "https://x.com/_Rahul_Paul",
     },
     {
       title: "Contact",
@@ -49,17 +59,19 @@ export default function Home() {
     <>
       <FloatingDock items={navigationItems} />
       <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-        <SheetContent>
-          <SheetHeader>
-            <SheetTitle>Reach Out</SheetTitle>
-            <SheetDescription>
-              You can reach out to me via email or connect with me on social media.
+        <SheetContent className="w-full sm:w-[400px] md:w-[450px]">
+          <SheetHeader className="space-y-2">
+            <SheetTitle className="text-3xl">Reach Out</SheetTitle>
+            <SheetDescription className="text-base">
+              Let&apos;s connect! Choose your preferred way to get in touch.
             </SheetDescription>
           </SheetHeader>
+          
+            <Sheetcontent />
+          
         </SheetContent>
       </Sheet>
       <Main />
-      
     </>
   );
 }
