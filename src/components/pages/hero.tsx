@@ -24,35 +24,42 @@ export default function Hero() {
             </h2>
             <div className="text-lg text-muted-foreground space-y-2 md:text-left ">
               <p>
-                Building with passion, from{" "}
+                Building as a CS undergrad from India—mixing
                 <strong className="font-semibold text-white">
-                  backend systems
-                </strong>{" "}
-                to{" "}
+                  {" "}
+                  backend engineering
+                </strong>
+                ,<strong className="font-semibold text-white"> Linux hacking </strong>
+                and
                 <strong className="font-semibold text-white">
-                  smart contracts
+                  {" "}
+                  3D
                 </strong>
                 .
               </p>
               <p>
-                Drawn to{" "}
+                hackathon winner, passionate about
+                <strong className="font-semibold text-white"> C++</strong>,
                 <strong className="font-semibold text-white">
-                  dev tooling
+                  {" "}
+                  TypeScript
                 </strong>
-                ,{" "}
-                <strong className="font-semibold text-white">
-                  low-level optimization
-                </strong>
-                , and complex puzzles.
+                , and
+                <strong className="font-semibold text-white"> Rust</strong>.
               </p>
               <p>
-                Currently exploring{" "}
-                <strong className="font-semibold text-white">Rust</strong>,{" "}
+                Currently exploring
+                <strong className="font-semibold text-white"> DSA</strong>,
                 <strong className="font-semibold text-white">
-                  Linux internals
+                  {" "}
+                  Solana dApps
                 </strong>
-                , and{" "}
-                <strong className="font-semibold text-white">Solana</strong>.
+                , and
+                <strong className="font-semibold text-white">
+                  {" "}
+                  creative coding and WebDev
+                </strong>
+                .
               </p>
             </div>
           </div>
