@@ -195,6 +195,23 @@ function IconContainer({
       onMouseLeave={() => setHovered(false)}
       className="relative flex aspect-square items-center justify-center rounded-full bg-gray-200 dark:bg-neutral-800"
     >
+      {/* Animated outline for Contact button */}
+      {title === "Contact" && (
+        <motion.div
+          initial={{ opacity: 0.7, scale: 1 }}
+          animate={{
+            opacity: [0.7, 1, 0.7],
+            scale: [1, 1.08, 1],
+          }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            repeatType: "loop",
+            ease: "easeInOut",
+          }}
+          className="absolute inset-0 z-0 rounded-full border-2 border-yellow-400 pointer-events-none"
+        />
+      )}
       <AnimatePresence>
         {hovered && (
           <motion.div
@@ -209,7 +226,7 @@ function IconContainer({
       </AnimatePresence>
       <motion.div
         style={{ width: widthIcon, height: heightIcon }}
-        className="flex items-center justify-center"
+        className="flex items-center justify-center z-10"
       >
         {icon}
       </motion.div>
