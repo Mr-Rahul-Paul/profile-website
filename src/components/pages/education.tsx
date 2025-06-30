@@ -14,7 +14,7 @@ export default function Education() {
         {
             icon: null,
             school: "MVN schools",
-            degree: "Electronics & Telecommunication",
+            degree: "Centeral Board of Secondary Education , 10th + 12th",
             period: "2017-2023",
             image: "https://pbs.twimg.com/profile_images/1171992656844451840/I8gOz955_400x400.jpg"
         }

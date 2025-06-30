@@ -21,8 +21,8 @@ export default function Main() {
         {/* Hero */}
         <Hero />
         <Achievements />
-        <Education />
         <EmailandSkills />
+        <Education />
         <Telebot />
       </div>
     </div>

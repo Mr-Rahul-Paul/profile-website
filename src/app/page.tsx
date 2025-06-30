@@ -50,7 +50,7 @@ export default function Home() {
     {
       title: "Contact",
       icon: <IconMail className="h-full w-full text-yellow-400" />,
-      href: "#contact",
+      href: "",
       onClick: () => setIsSheetOpen(true),
     },
   ];

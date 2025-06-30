@@ -22,6 +22,12 @@ export default function Achievements() {
         "Selected as volunteer member from first years across the entire batch",
       period: " sept 2024 - may 2025",
     },
+    {
+      icon: "📚",
+      title: "JEE - Top 1.5th Percentile",
+      description: "Cleared JEE Mains with exceptional performance in top 1.5th percentile",
+      period: "2024",
+    },
   ];
   return (
     <>

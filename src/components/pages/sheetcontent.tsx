@@ -26,7 +26,7 @@ export default function Sheetcontent() {
   const contactMethods = [
     {
       title: "Email",
-      value: "rahulpaul.dev@gmail.com",
+      value: "rpaul29120@gmail.com",
       icon: <IconMail className="w-5 h-5" />,
       action: handleCopyEmail,
       actionText: copiedEmail ? "Copied!" : "Copy Email",

@@ -57,7 +57,7 @@ export default function Skills() {
       "Low-level C/C++",
       "Data Structures",
     ],
-    "🎨 Creative": ["Blender", "3D Design", "Abstract VFX", "Animation"],
+    "🎨 Creative hobby": ["Blender", "3D Design", "Abstract VFX", "Animation"],
   };
   return (
     <div>

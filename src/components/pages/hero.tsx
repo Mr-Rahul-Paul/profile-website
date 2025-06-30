@@ -15,10 +15,10 @@ export default function Hero() {
           {/* wrap in a div to move text as i please wish lesss gooo */}
           <div className="flex justify-center lg:justify-start">
             <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-white text-center lg:text-left">
-              Yo! Paul here
+              Hello! I&apos;m Paul
             </h1>
           </div>
-          <div className="mb-8">
+          <div className="mb-4">
             <h2 className="text-xl font-semibold mb-4 text-white sm:text-center lg:text-left">
               About me
             </h2>
