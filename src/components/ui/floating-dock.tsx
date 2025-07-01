@@ -117,7 +117,7 @@ const FloatingDockDesktop = ({
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
         // here we control pos and all
-        "shadow-xl fixed bottom-4 top-[4vh] left-1/2 z-50 -translate-x-1/2 mx-auto hidden h-16 items-end gap-4 rounded-4xl hover:rounded-full border-[2px] border-white/20 hover:h-18  transition-all duration-250 bg-gray-50 px-4 pb-3 md:flex dark:bg-neutral-900",
+        "shadow-xl fixed bottom-4 top-[4vh] left-1/2 z-50 -translate-x-1/2 mx-auto hidden h-16 items-end gap-4 rounded-4xl hover:rounded-full border-[2px] border-white/20 hover:h-18  transition-all duration-250 backdrop-blur-md  dark:bg-black/10 px-4 pb-3 md:flex",
         className
       )}
     >
@@ -196,7 +196,7 @@ function IconContainer({
       className="relative flex aspect-square items-center justify-center rounded-full bg-gray-200 dark:bg-neutral-800"
     >
       {/* Animated outline for Contact button */}
-      {title === "Contact" && (
+      {title === "Contact"  && (
         <motion.div
           initial={{ opacity: 0.7, scale: 1 }}
           animate={{
@@ -210,6 +210,22 @@ function IconContainer({
             ease: "easeInOut",
           }}
           className="absolute inset-0 z-0 rounded-full border-2 border-yellow-400 pointer-events-none"
+        />
+      )}
+      {title === "Projects"  && (
+        <motion.div
+          initial={{ opacity: 0.7, scale: 1 }}
+          animate={{
+            opacity: [0.7, 1, 0.7],
+            scale: [1, 1.08, 1],
+          }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            repeatType: "loop",
+            ease: "easeInOut",
+          }}
+          className="absolute inset-0 z-0 rounded-full border-2 border-blue-400 pointer-events-none"
         />
       )}
       <AnimatePresence>
