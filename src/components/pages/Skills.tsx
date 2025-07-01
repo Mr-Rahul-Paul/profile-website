@@ -62,7 +62,7 @@ export default function Skills() {
   return (
     <div>
       {/* Skills & Interests */}
-      <section className="mb-16">
+      <section className="mb-10">
         <h2 className="text-2xl font-bold mb-8 text-white">
           Skills & Interests
         </h2>
@@ -88,7 +88,7 @@ export default function Skills() {
                       )}
                       {languageIcons[skill] && (
                         <span className="absolute left-1/2 -translate-x-1/2 mt-16 px-2 py-1 rounded bg-zinc-900 text-white text-xs opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity z-10">
-                          {skill}
+                          {skill} 
                         </span>
                       )}
                     </div>
@@ -96,6 +96,9 @@ export default function Skills() {
                 </div>
               </div>
             ))}
+            <div>
+            <a href="https://www.instagram.com/rahulpaul.3d/" className="text-white underline text-sm" target="_blank">want to see my art ?</a>
+            </div>
           </div>
         </div>
       </section>

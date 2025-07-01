@@ -7,7 +7,7 @@ import Hero from "./hero";
 export default function Main() {
   return (
     <div
-      className="min-h-screen bg-transparent text-foreground pt-21 flex flex-wrap"
+      className="min-h-screen bg-transparent text-foreground pt-21 "
       style={{
         backgroundImage: "url(/BG_BLACK.png)",
         backgroundSize: "cover",
