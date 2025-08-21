@@ -27,6 +27,17 @@ export default function LinksSheet() {
       tech: "React, Quantum Computing, VQE",
       featured: true,
     },
+    {
+      title: "Paul's Blogs",
+      description:
+        "A modern, responsive personal blogging platform built with Next.js, TypeScript, and Tailwind CSS",
+      icon: <IconCode className="w-5 h-5 text-green-400" />,
+      href: "https://my-blogs-one-omega.vercel.app/",
+      color: "text-green-400",
+      bgColor: "bg-[#222]",
+      tech: "Next.js, TypeScript, Tailwind",
+      featured: true,
+    },
   ];
 
   return (
@@ -42,14 +53,14 @@ export default function LinksSheet() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="hover:bg-[#1a1a1a] transition-all duration-200 cursor-pointer p-3 rounded-lg border border-[#333] hover:border-[#555]"
+                className="hover:bg-[#1a1a1a] transition-all duration-200 cursor-pointer p-3 rounded-xl border border-[#737373] hover:border-[#555]"
                 onClick={() => window.open(project.href, "_blank")}
               >
                 <div className="flex items-start justify-between">
                   <div className="flex items-start space-x-3 flex-1">
                     <div className="flex flex-col items-center">
                       <div
-                        className={`flex-shrink-0 p-2 ${project.bgColor} rounded-lg group-hover:bg-[#333] transition-colors`}
+                        className={`flex-shrink-0 p-2 ${project.bgColor} rounded-lg group-hover:bg-[#737373] transition-colors`}
                       >
                         {project.icon}
                       </div>
@@ -89,11 +100,11 @@ export default function LinksSheet() {
         </div>
 
         {/* Quick Stats Section */}
-        <div className="mx-2 p-4 bg-[#0a0a0a] border border-[#333] rounded-lg">
+        <div className="mx-2 p-4 bg-[#0a0a0a] border border-[#737373] rounded-xl">
           <h3 className="text-sm font-semibold text-white mb-3">Quick Stats</h3>
           <div className="grid grid-cols-2 gap-3">
             <div className="text-center">
-              <div className="text-lg font-bold text-white">2+</div>
+              <div className="text-lg font-bold text-white">3+</div>
               <div className="text-xs text-gray-400">Projects</div>
             </div>
             <div className="text-center">

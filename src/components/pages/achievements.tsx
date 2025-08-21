@@ -1,6 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-export default function Achievements() {
+export default function Achievements({
+  openProjectsSheet,
+}: {
+  openProjectsSheet?: () => void;
+}) {
   const achievements = [
     {
       icon: "💻",
@@ -40,7 +44,12 @@ export default function Achievements() {
           exit={{ opacity: 0, y: 10 }}
           transition={{ duration: 0.2 }}
         >
-          Achievements & Projects
+          {/* div */}
+          Achievements &{" "}
+          <span
+            className="underline font-bold text-white p-0 h-auto bg-transparent border-none cursor-pointer"
+            onClick={openProjectsSheet}
+          >Projects.</span>
         </motion.h2>
         <div className="space-y-4 ">
           {achievements.map((item) => (

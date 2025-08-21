@@ -87,7 +87,7 @@ export default function Home() {
         </SheetContent>
       </Sheet>
 
-      <Main />
+        <Main openProjectsSheet={() => setIsLinksSheetOpen(true)} />
     </>
   );
 }

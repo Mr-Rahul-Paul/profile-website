@@ -3,8 +3,13 @@ import Education from "./education";
 import EmailandSkills from "./Skills";
 import Telebot from "./telebot";
 import Hero from "./hero";
+// import { Button } from "../ui/button";
 
-export default function Main() {
+export default function Main({
+  openProjectsSheet,
+}: {
+  openProjectsSheet?: () => void;
+}) {
   return (
     <div
       className="min-h-screen bg-transparent text-foreground pt-21 "
@@ -20,10 +25,11 @@ export default function Main() {
       <div className="relative max-w-[850px] mx-auto px-6 py-12 ">
         {/* Hero */}
         <Hero />
-        <Achievements />
+        <Achievements openProjectsSheet={openProjectsSheet} />
         <EmailandSkills />
         <Education />
         <Telebot />
+        
       </div>
     </div>
   );
