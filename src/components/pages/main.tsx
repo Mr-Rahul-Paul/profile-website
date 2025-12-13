@@ -3,6 +3,7 @@ import Education from "./education";
 import EmailandSkills from "./Skills";
 import Telebot from "./telebot";
 import Hero from "./hero";
+import Projects from "./projects";
 // import { Button } from "../ui/button";
 
 export default function Main({
@@ -26,6 +27,7 @@ export default function Main({
         {/* Hero */}
         <Hero />
         <Achievements openProjectsSheet={openProjectsSheet} />
+        <Projects />
         <EmailandSkills />
         <Education />
         <Telebot />

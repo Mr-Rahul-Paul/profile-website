@@ -97,7 +97,13 @@ export default function Skills() {
               </div>
             ))}
             <div>
-            <a href="https://www.instagram.com/rahulpaul.3d/" className="text-white underline text-sm" target="_blank">want to see my art ?</a>
+              <a 
+                href="https://www.instagram.com/rahulpaul.3d/" 
+                className="inline-block mt-4 text-sm text-gray-400 hover:text-white transition-colors border-b border-gray-600 hover:border-white pb-0.5" 
+                target="_blank"
+              >
+                🎨 Check out my 3D art portfolio →
+              </a>
             </div>
           </div>
         </div>
