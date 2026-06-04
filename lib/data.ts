@@ -117,33 +117,44 @@ export const PROJECTS = {
     },
   ],
 };
-
 export const OSS = [
   {
     name: "OWASP Nest",
     status: "active",
-    tags: "python · typescript · django · graphql",
-    stats: "13 merged PRs · +1518 / −504 lines\ntop-4 contributor · 175hrs",
+    tags: "Typescript · Django · GraphQL · CI/CD · Make",
+    stats:
+      "• Merged 13 pull requests across the platform, delivering full-stack features like the complete Sponsors Program infrastructure and breadcrumb route interceptors.\n• Fixed a silent caching collision in Algolia search that was serving broken query results to concurrent users.",
     mentors: "Ark (Arkadii Yakovets), Kate (Kateryna Golovanova)",
     progress: 80,
   },
   {
     name: "FreeCAD",
     status: "2025",
-    tags: "C++",
-    stats: "3 merged PRs — signal handling, clipboard export, TechDraw fix",
+    tags: "C++ · qt framework",
+    stats:
+      "• Contributed 3 patches to the core release workbench, including a critical performance fix that eliminated infinite Qt signal/slot loops in the Image Plane settings.\n• Developed a native copy-to-clipboard utility inside core Unit Test dialogs to streamline developer debugging workflows.",
     mentors: "",
     progress: 100,
   },
-  // {
-  //   name: "CNCF Harbor",
-  //   status: "upcoming",
-  //   tags: "go",
-  //   stats: "Building toward LFX Term 3 · deadline July 30 2026",
-  //   mentors: "",
-  //   progress: 20,
-  // },
+  {
+    name: "Summer of Bitcoin",
+    status: "shortlist",
+    tags: "Rust · bitcoin-core · data structures",
+    stats:
+      "• Advanced to the developer track challenge round by placing in the top 5% of over 7,000 global applicants.\n• Engineered Rust simulation test suites to analyze script validation constraints and memory boundaries for bitcoin-core transactions.",
+    mentors: "",
+    progress: 100,
+  },
 ];
+// {
+//   name: "CNCF Harbor",
+//   status: "upcoming",
+//   tags: "go",
+//   stats: "Building toward LFX Term 3 · deadline July 30 2026",
+//   mentors: "",
+//   progress: 20,
+// },
+// ];
 
 export const SKILLS = [
   {
