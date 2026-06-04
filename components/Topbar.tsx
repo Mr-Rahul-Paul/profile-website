@@ -19,7 +19,7 @@ export default function Topbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 h-12 border-b border-border bg-bg/80 backdrop-blur-sm flex items-center justify-between px-4 sm:px-6 font-mono text-[13px]">
+      <header className="sticky top-0 z-40 h-12 border-b border-neutral-700 bg-bg/80 backdrop-blur-sm flex items-center justify-between px-4 sm:px-6 font-mono text-[13px]">
         <div className="flex items-center text-text">
           rahul@omarchy ~/{pathname.split("/")[1] || ""}
           <span className="inline-block w-2 h-4 bg-white ml-1 animate-blink" />
@@ -27,20 +27,30 @@ export default function Topbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden sm:flex items-center gap-4 text-dim">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`hover:text-text transition-colors flex items-center gap-1.5 ${
-                pathname === link.href ? "text-text" : ""
-              }`}
-            >
-              <span>{link.label}</span>
-              <kbd className="px-1 py-0.5 text-[10px] border border-border rounded-[2px] bg-bg-raised text-muted">
-                {link.kbd}
-              </kbd>
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`hover:text-text transition-colors flex items-center gap-1.5 ${
+                  isActive ? "text-text" : "text-neutral-500"
+                }`}
+              >
+                <span>{link.label}</span>
+                <kbd
+                  className={`px-1 py-0.5 text-[10px] border rounded-xs bg-bg-raised transition-colors ${
+                    isActive
+                      ? "border-text text-text"
+                      : "border-neutral-500 text-neutral-500"
+                  }`}
+                >
+                  {link.kbd}
+                </kbd>
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Mobile Nav Toggle */}
