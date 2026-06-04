@@ -12,28 +12,31 @@ export const PERSON = {
 
 export const STATS = [
   { value: "13", label: "merged PRs · owasp" },
-  { value: "6.3k", label: "req/sec · rust http" },
+  { value: "3", label: "merged PRs · FreeCAD" },
   { value: "98.5", label: "JEE percentile" },
 ];
 
 export const EXPERIENCE = [
   {
-    date: "May 2026 - Aug 2026",
+    date: "May 2026 - Present",
     role: "Security Intern",
     org: "Mine2.io",
-    notes: "OS hardening, YAML vuln scanner analysis, OverTheWire/TryHackMe",
+    notes:
+      "Hardened cloud/OS baselines to remediate faulty detection assets and validated AWS/K8s deception pipelines via strace and kubectl",
   },
   {
     date: "feb 2026 - Present",
     role: "Software Developer Intern",
     org: "Filmylog.com",
-    notes: "20+ APIs, OAuth, WebSocket chat, GCP auth — daily delivery",
+    notes:
+      "Integrated 20+ APIs to deliver auth, real-time chat, sockets and multimedia workflows in a production Flutter based social platform.",
   },
   {
     date: "Dec 2025 - Present",
     role: "Open Source",
-    org: "OWASP Nest · FreeCAD",
-    notes: "13 merged PRs, 3 C++ PRs",
+    org: "OWASP Nest · FreeCAD · summer of bitcoin",
+    notes:
+      "Contributed 16+ merged PRs across OWASP Nest and FreeCAD, delivering refactors, platform enhancements, and core open-source improvements.",
   },
 ];
 
@@ -132,14 +135,14 @@ export const OSS = [
     mentors: "",
     progress: 100,
   },
-  {
-    name: "CNCF Harbor",
-    status: "upcoming",
-    tags: "go",
-    stats: "Building toward LFX Term 3 · deadline July 30 2026",
-    mentors: "",
-    progress: 20,
-  },
+  // {
+  //   name: "CNCF Harbor",
+  //   status: "upcoming",
+  //   tags: "go",
+  //   stats: "Building toward LFX Term 3 · deadline July 30 2026",
+  //   mentors: "",
+  //   progress: 20,
+  // },
 ];
 
 export const SKILLS = [
@@ -161,7 +164,12 @@ export const SKILLS = [
   },
   {
     category: "< Security />",
-    items: ["Linux Hardening", "YAML Config Analysis", "OverTheWire", "TryHackMe"],
+    items: [
+      "Linux Hardening",
+      "YAML Config Analysis",
+      "OverTheWire",
+      "TryHackMe",
+    ],
   },
 ];
 
@@ -173,4 +181,3 @@ export const LANG_BARS = [
   { lang: "Go", percent: 28, label: "in progress · CNCF" },
   { lang: "Dart", percent: 60, label: "filmylog" },
 ];
-

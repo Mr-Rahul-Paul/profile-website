@@ -21,9 +21,10 @@ export default function Topbar() {
     <>
       <header className="sticky top-0 z-40 h-12 border-b border-border bg-bg/80 backdrop-blur-sm flex items-center justify-between px-4 sm:px-6 font-mono text-[13px]">
         <div className="flex items-center text-text">
-          rahul@arch ~/{pathname.split("/")[1] || ""}<span className="inline-block w-2 h-4 bg-text ml-1 animate-blink" />
+          rahul@omarchy ~/{pathname.split("/")[1] || ""}
+          <span className="inline-block w-2 h-4 bg-white ml-1 animate-blink" />
         </div>
-        
+
         {/* Desktop Nav */}
         <nav className="hidden sm:flex items-center gap-4 text-dim">
           {navLinks.map((link) => (
@@ -35,7 +36,9 @@ export default function Topbar() {
               }`}
             >
               <span>{link.label}</span>
-              <kbd className="px-1 py-0.5 text-[10px] border border-border rounded-[2px] bg-bg-raised text-muted">{link.kbd}</kbd>
+              <kbd className="px-1 py-0.5 text-[10px] border border-border rounded-[2px] bg-bg-raised text-muted">
+                {link.kbd}
+              </kbd>
             </Link>
           ))}
         </nav>
@@ -50,7 +53,10 @@ export default function Topbar() {
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-bg sm:hidden flex flex-col">
           <div className="h-12 border-b border-border flex items-center justify-end px-4">
-            <button className="text-text font-mono text-[13px]" onClick={() => setIsOpen(false)}>
+            <button
+              className="text-text font-mono text-[13px]"
+              onClick={() => setIsOpen(false)}
+            >
               [close]
             </button>
           </div>
