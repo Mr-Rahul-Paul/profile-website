@@ -18,19 +18,19 @@ export const STATS = [
 
 export const EXPERIENCE = [
   {
-    date: "2026",
+    date: "May 2026 - Aug 2026",
     role: "Security Intern",
-    org: "MINE2",
+    org: "Mine2.io",
     notes: "OS hardening, YAML vuln scanner analysis, OverTheWire/TryHackMe",
   },
   {
-    date: "2026",
-    role: "Flutter Developer",
-    org: "Filmylog",
+    date: "feb 2026 - Present",
+    role: "Software Developer Intern",
+    org: "Filmylog.com",
     notes: "20+ APIs, OAuth, WebSocket chat, GCP auth — daily delivery",
   },
   {
-    date: "2025–26",
+    date: "Dec 2025 - Present",
     role: "Open Source",
     org: "OWASP Nest · FreeCAD",
     notes: "13 merged PRs, 3 C++ PRs",

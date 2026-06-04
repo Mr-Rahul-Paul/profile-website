@@ -23,14 +23,14 @@ export default function Home() {
 
       {/* Links Row */}
       <div className="flex flex-wrap items-center gap-3 font-mono text-xs text-dim mb-16">
-        <a href="https://github.com/Mr-Rahul-Paul" target="_blank" className="hover:text-text border border-border px-3 py-1 rounded-[3px]">github</a>
-        <a href={`https://linkedin.com/in/${PERSON.linkedin}`} target="_blank" className="hover:text-text border border-border px-3 py-1 rounded-[3px]">linkedin</a>
-        <a href="#" className="hover:text-text border border-border px-3 py-1 rounded-[3px]">cv.pdf</a>
-        <a href={`mailto:${PERSON.email}`} className="hover:text-text border border-border px-3 py-1 rounded-[3px]">mail</a>
+        <a href="https://github.com/Mr-Rahul-Paul" target="_blank" className="hover:text-text hover:border-white border border-border px-3 py-1 rounded-[3px]">github</a>
+        <a href={`https://linkedin.com/in/${PERSON.linkedin}`} target="_blank" className="hover:text-text hover:border-white border border-border px-3 py-1 rounded-[3px]">linkedin</a>
+        <a href="#" className="hover:text-text hover:border-white border border-border px-3 py-1 rounded-[3px]">cv.pdf</a>
+        <a href={`mailto:${PERSON.email}`} className="hover:text-text hover:border-white border border-border px-3 py-1 rounded-[3px]">mail</a>
       </div>
 
       {/* Stats */}
-      <div className="text-[10px] font-mono text-dim mb-6 uppercase tracking-widest">By the numbers</div>
+      {/* <div className="text-[10px] font-mono text-dim mb-6 uppercase tracking-widest">By the numbers</div>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16">
         {STATS.map((stat, i) => (
           <div key={i} className="bg-bg-raised border border-border p-5 rounded-[3px]">
@@ -38,7 +38,7 @@ export default function Home() {
             <div className="text-muted text-[11px] font-mono whitespace-pre-wrap leading-tight">{stat.label.replace(" · ", "\n")}</div>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Experience */}
       <div className="text-[10px] font-mono text-dim mb-8 uppercase tracking-widest border-b border-border pb-4">Experience</div>
