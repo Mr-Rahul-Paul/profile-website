@@ -9,12 +9,16 @@ export default function Home() {
       <Avatar />
 
       <h1 className="text-[30px] font-light text-text mb-1">{PERSON.name}</h1>
-      <div className="font-mono text-xs text-dim mb-8">
+      <div className="font-mono text-xs text-neutral-500 mb-8">
         cs sophomore · systems · open source
       </div>
 
-      <p className="leading-relaxed mb-8">
-        CS sophomore at <strong className="text-text font-normal">IIIT Vadodara</strong>. I build things close to the metal — async Rust at <strong className="text-text font-normal">6,300+ req/sec</strong>, C++ patches in FreeCAD, Go for CNCF. Currently interning in cybersecurity while shipping Flutter at <strong className="text-text font-normal">Filmylog</strong> daily. V2X paper accepted at <strong className="text-text font-normal">IIT Palakkad</strong>. Started sculpting 3D at 13 — tools: ZBrush, Blender. Recognized by Raf Grassetti (God of War art director).
+      <p className="leading-relaxed mb-8 text-neutral-400">
+        From India. CS @ <strong className="text-text font-normal">IIIT Vadodara</strong>.
+        Open-source contributor and former 3D artist. Building with{" "}
+        <strong className="text-text font-normal">Rust</strong> and{" "}
+        <strong className="text-text font-normal">TypeScript</strong> while
+        contributing to open source and tinkering on Linux.
       </p>
 
       {/* Links Row */}
