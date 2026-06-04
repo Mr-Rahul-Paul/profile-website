@@ -9,17 +9,17 @@ export default function WorkPage() {
   const [activeTab, setActiveTab] = useState<Tab>("sys");
 
   return (
-    <div className="max-w-[680px] mx-auto px-6 sm:px-8 animate-in fade-in slide-in-from-bottom-2 duration-300">
+    <div className="max-w-200 mx-auto px-6 sm:px-8 animate-in fade-in slide-in-from-bottom-2 duration-300">
       <h1 className="text-xl text-text font-mono mb-8">~/work</h1>
 
       <div className="space-y-6 mb-16">
         {WORK.map((job, i) => (
-          <div key={i} className="border border-border rounded-[3px] p-6 bg-bg-raised">
+          <div key={i} className="border border-neutral-800 rounded-xl p-6 bg-bg-raised">
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
               <h2 className="text-text font-medium">{job.org}</h2>
               <span className="font-mono text-xs text-dim mt-1 sm:mt-0">{job.date}</span>
             </div>
-            <div className="font-mono text-xs text-muted mb-4 border-b border-border pb-4">
+            <div className="font-mono text-xs text-neutral-500 mb-4 border-b border-border pb-4">
               {job.role} · {job.location}
             </div>
             <ul className="space-y-2 text-sm text-sub list-disc list-inside marker:text-dim">

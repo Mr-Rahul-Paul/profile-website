@@ -34,7 +34,7 @@ export default function RootLayout({
         <ToastProvider>
           <KeyboardManager />
           <Topbar />
-          <main className="flex-1 pb-16 pt-4">
+          <main className="flex-1 pb-16 pt-5">
             {children}
           </main>
           <Statusbar />

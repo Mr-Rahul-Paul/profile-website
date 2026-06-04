@@ -47,9 +47,9 @@ export const WORK = [
     date: "May 2026 – now",
     location: "Remote",
     bullets: [
-      "Reviewed YAML vulnerability scanner configurations, produced improvement reports",
-      "Linux hardening: SSH, SUID/SGID, sysctl, auditd",
-      "OverTheWire Bandit, TryHackMe XOR/OSINT challenges",
+      "Executed black-box validation of the core product binary across isolated Linux environments, triggering 8+ deception mines to evaluate real-time alerting efficacy.",
+      "Reduced theoretical attack surface by mapping linux hardening vectors (pam policies, ssh config, aslr, sysctl kernel params, suid/sgid bit auditing) into a structured remediation report, directly informing the product team's hardening roadmap",
+      "Audited binary interaction with system infrastructure using low-level diagnostics (strace, systemctl, kubectl) to identify non-functioning detection assets across PostgreSQL, MongoDB, and AWS networks.",
     ],
   },
   {
@@ -58,9 +58,9 @@ export const WORK = [
     date: "2026 – present",
     location: "Remote",
     bullets: [
-      "Integrated 20+ REST APIs via Postman; built WebSocket chat from scratch",
-      "Debugged GCP OAuth DEVELOPER_ERROR across mismatched Firebase projects",
-      "Daily delivery, production Flutter app",
+      "Architected and shipped a real-time websocket chat subsystem from scratch — full event protocol, server-side handlers, and flutter client integration, delivered as a single-owner implementation.",
+      "Integrated 20+ rest apis spanning auth, home feed, search, and chat flows, handling full request lifecycle from postman contract verification through flutter client wiring",
+      // "maintained a daily production deployment cadence while integrating 20+ rest api endpoints end-to-end, from postman contract verification through flutter client wiring, sustaining feature velocity at an early-stage startup with no staging buffer",
     ],
   },
 ];
