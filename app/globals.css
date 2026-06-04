@@ -10,7 +10,6 @@
   --color-sub: #666666;
   --color-body: #999999;
   --color-text: #e0e0e0;
-  --color-gold: #c9a84c;
 
   --font-mono: var(--font-ibm-plex-mono), monospace;
   --font-sans: var(--font-ibm-plex-sans), sans-serif;
@@ -27,7 +26,6 @@
     --sub: #666666;
     --body: #999999;
     --text: #e0e0e0;
-    --gold: #c9a84c;
   }
   
   * {
@@ -60,15 +58,7 @@
     border: 1px solid var(--border);
   }
   
-  /* Star Wars Crawl */
-  @keyframes crawl {
-    0% { top: 100vh; transform: rotateX(25deg) translateY(0); }
-    100% { top: -100vh; transform: rotateX(25deg) translateY(-200%); }
-  }
-  .animate-crawl {
-    animation: crawl 24s linear forwards;
-  }
-  
+
   /* Blinking cursor */
   @keyframes blink {
     0%, 100% { opacity: 1; }

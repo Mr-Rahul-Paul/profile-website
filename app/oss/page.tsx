@@ -41,18 +41,6 @@ export default function OssPage() {
         ))}
       </div>
 
-      <div className="border border-border rounded-[3px] bg-bg-raised p-5 font-mono text-[13px] text-muted overflow-x-auto">
-        <div className="mb-4">
-          <span className="text-text">$</span> git log --oneline --author="Rahul" | wc -l
-          <br />
-          <span className="text-dim">16  # and counting</span>
-        </div>
-        <div>
-          <span className="text-text">$</span> cat philosophy.txt
-          <br />
-          <span className="text-dim">"I learn by shipping — not by watching."</span>
-        </div>
-      </div>
     </div>
   );
 }

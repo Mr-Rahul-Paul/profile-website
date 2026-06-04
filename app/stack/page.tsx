@@ -14,8 +14,7 @@ export default function StackPage() {
         WM         <span className="text-muted">Hyprland (Omarchy)</span>{"\n"}
         Editor     <span className="text-muted">Neovim</span>{"\n"}
         Terminal   <span className="text-muted">foot</span>{"\n"}
-        Shell      <span className="text-muted">zsh</span>{"\n"}
-        Music      <span className="text-gold">Wrabel – Into the Wild</span>{"\n"}
+        Shell      <span className="text-muted">zsh + starship</span>{"\n"}
         Uptime     <span className="text-muted">since Hacktoberfest 2025</span>
       </div>
 
@@ -47,7 +46,7 @@ export default function StackPage() {
           <div key={i}>
             <div className="flex justify-between font-mono text-[11px] mb-1.5">
               <span className="text-dim">{bar.lang}</span>
-              <span className={bar.gold ? "text-gold" : "text-muted"}>{bar.label}</span>
+              <span className="text-muted">{bar.label}</span>
             </div>
             <div className="h-[2px] w-full bg-border">
               <div 

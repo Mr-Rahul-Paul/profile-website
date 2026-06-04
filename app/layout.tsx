@@ -5,7 +5,6 @@ import { ToastProvider } from "../components/Toast";
 import Topbar from "../components/Topbar";
 import Statusbar from "../components/Statusbar";
 import KeyboardManager from "../components/KeyboardManager";
-import StarWarsCrawl from "../components/StarWarsCrawl";
 
 const ibmPlexMono = IBM_Plex_Mono({
   variable: "--font-ibm-plex-mono",
@@ -21,7 +20,7 @@ const ibmPlexSans = IBM_Plex_Sans({
 
 export const metadata: Metadata = {
   title: "Rahul Paul",
-  description: "CS sophomore at IIIT Vadodara. I build things close to the metal.",
+  description: "CS sophomore at IIIT Vadodara. Systems, open source, Rust, Go.",
 };
 
 export default function RootLayout({
@@ -34,7 +33,6 @@ export default function RootLayout({
       <body className="antialiased font-sans text-body bg-bg flex flex-col min-h-screen">
         <ToastProvider>
           <KeyboardManager />
-          <StarWarsCrawl />
           <Topbar />
           <main className="flex-1 pb-16 pt-4">
             {children}

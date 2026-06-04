@@ -2,11 +2,8 @@
 
 import Avatar from "../components/Avatar";
 import { PERSON, STATS, EXPERIENCE } from "../lib/data";
-import { useCrawlStore } from "../lib/store";
 
 export default function Home() {
-  const { openCrawl } = useCrawlStore();
-
   return (
     <div className="max-w-[680px] mx-auto px-6 sm:px-8 animate-in fade-in slide-in-from-bottom-2 duration-300">
       <Avatar />
@@ -17,7 +14,7 @@ export default function Home() {
       </div>
 
       <p className="leading-relaxed mb-8">
-        CS sophomore at <strong className="text-text font-normal">IIIT Vadodara</strong>. I build things close to the metal — async Rust at <strong className="text-text font-normal">6,300+ req/sec</strong>, C++ patches in FreeCAD, Go for CNCF. Currently interning in cybersecurity while shipping Flutter at <strong className="text-text font-normal">Filmylog</strong> daily. V2X paper accepted at <strong className="text-text font-normal">IIT Palakkad</strong>. Also a <button className="text-gold underline cursor-pointer hover:opacity-80" onClick={openCrawl}>Jedi</button> — started sculpting 3D at 13, recognized by Raf Grassetti.
+        CS sophomore at <strong className="text-text font-normal">IIIT Vadodara</strong>. I build things close to the metal — async Rust at <strong className="text-text font-normal">6,300+ req/sec</strong>, C++ patches in FreeCAD, Go for CNCF. Currently interning in cybersecurity while shipping Flutter at <strong className="text-text font-normal">Filmylog</strong> daily. V2X paper accepted at <strong className="text-text font-normal">IIT Palakkad</strong>. Started sculpting 3D at 13 — tools: ZBrush, Blender. Recognized by Raf Grassetti (God of War art director).
       </p>
 
       {/* Links Row */}
@@ -26,7 +23,6 @@ export default function Home() {
         <a href={`https://linkedin.com/in/${PERSON.linkedin}`} target="_blank" className="hover:text-text border border-border px-3 py-1 rounded-[3px]">linkedin</a>
         <a href="#" className="hover:text-text border border-border px-3 py-1 rounded-[3px]">cv.pdf</a>
         <a href={`mailto:${PERSON.email}`} className="hover:text-text border border-border px-3 py-1 rounded-[3px]">mail</a>
-        <button className="text-gold border border-gold/20 hover:bg-gold/10 px-3 py-1 rounded-[3px] transition-colors" onClick={openCrawl}>⚔ episode ii</button>
       </div>
 
       {/* Stats */}
@@ -42,7 +38,7 @@ export default function Home() {
 
       {/* Experience */}
       <div className="text-[10px] font-mono text-dim mb-8 uppercase tracking-widest border-b border-border pb-4">Experience</div>
-      <div className="space-y-8">
+      <div className="space-y-8 mb-12">
         {EXPERIENCE.map((exp, i) => (
           <div key={i} className="grid grid-cols-[80px_1fr] gap-4 items-baseline text-sm">
             <div className="text-dim font-mono text-xs">{exp.date}</div>
@@ -53,6 +49,17 @@ export default function Home() {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* NOW */}
+      <div className="text-[10px] font-mono text-dim mb-8 uppercase tracking-widest border-b border-border pb-4">Now</div>
+      <div className="grid grid-cols-[80px_1fr] gap-4 items-baseline text-sm mb-8">
+        <div className="text-dim font-mono text-xs">now</div>
+        <div className="text-sub leading-relaxed space-y-2">
+          <div>Building toward LFX Mentorship Term 3 · CNCF Harbor · Go</div>
+          <div>Cybersecurity internship at MINE2 · Jun–Jul 2026</div>
+          <div>Open to: oss collaboration · research · internships</div>
+        </div>
       </div>
     </div>
   );

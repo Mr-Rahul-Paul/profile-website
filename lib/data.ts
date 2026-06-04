@@ -163,10 +163,6 @@ export const SKILLS = [
     category: "< Security />",
     items: ["Linux Hardening", "YAML Config Analysis", "OverTheWire", "TryHackMe"],
   },
-  {
-    category: "< 3D · subtle />",
-    items: ["ZBrush", "Blender", "Adobe Suite"],
-  },
 ];
 
 export const LANG_BARS = [
@@ -174,37 +170,7 @@ export const LANG_BARS = [
   { lang: "TypeScript", percent: 78, label: "owasp nest" },
   { lang: "C++", percent: 65, label: "freecad PRs" },
   { lang: "Python", percent: 70, label: "django / scripts" },
-  { lang: "Go", percent: 28, label: "in progress · CNCF", gold: true },
+  { lang: "Go", percent: 28, label: "in progress · CNCF" },
   { lang: "Dart", percent: 60, label: "filmylog" },
 ];
 
-export const CRAWL_TEXT = `EPISODE II
-THE PORTFOLIO AWAKENS
-
-A long time ago in a galaxy far, far away —
-JEE 2024. Top 1.5% of a million engineers.
-The Force was strong.
-
-Now, RAHUL PAUL, a CS sophomore at IIIT
-Vadodara, wages war on bad abstractions and
-unmonitored systems across the open source galaxy.
-
-With 13 merged PRs at OWASP Nest and 3 C++
-contributions to FreeCAD, our hero has earned
-the respect of the Rebel Alliance of maintainers.
-
-A V2X research paper accepted at IIT Palakkad
-signals the next chapter. The LFX Term 3
-application looms — CNCF Harbor calls from
-the outer rim.
-
-Armed with Rust, Go, and the ancient arts of
-ZBrush — once recognized by Raf Grassetti,
-God of War art director — Rahul ships daily
-from Ahmedabad.
-
-His OS: Arch Linux.
-His window manager: Hyprland.
-His deployment strategy: it works on my machine.
-
-The Force will be with you. Always.`;
