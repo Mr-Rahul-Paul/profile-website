@@ -5,7 +5,7 @@ import { PERSON, STATS, EXPERIENCE } from "../lib/data";
 
 export default function Home() {
   return (
-    <div className="max-w-[680px] mx-auto px-6 sm:px-8 animate-in fade-in slide-in-from-bottom-2 duration-300">
+    <div className="max-w-[680px] mx-auto px-6 sm:px-8 ">
       <Avatar />
 
       <h1 className="text-[30px] font-light text-text mb-1">{PERSON.name}</h1>
