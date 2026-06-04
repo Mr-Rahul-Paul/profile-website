@@ -1,10 +1,9 @@
 "use client";
 
-import { useCrawlStore, useTrailStore } from "../lib/store";
+import { useCrawlStore } from "../lib/store";
 
 export default function Statusbar() {
   const { openCrawl } = useCrawlStore();
-  const { toggleTrail, isActive } = useTrailStore();
 
   return (
     <footer className="fixed bottom-0 left-0 right-0 h-9 border-t border-border bg-bg flex items-center justify-between px-4 sm:px-6 font-mono text-[10px] text-muted z-40">
@@ -26,13 +25,6 @@ export default function Statusbar() {
           title="episode ii"
         >
           ⚔
-        </button>
-        <button 
-          onClick={toggleTrail}
-          className={`hover:text-text transition-colors ${isActive ? 'text-text' : ''}`}
-          title="toggle lightsaber trail"
-        >
-          J
         </button>
       </div>
     </footer>

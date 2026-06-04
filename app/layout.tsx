@@ -5,7 +5,6 @@ import { ToastProvider } from "../components/Toast";
 import Topbar from "../components/Topbar";
 import Statusbar from "../components/Statusbar";
 import KeyboardManager from "../components/KeyboardManager";
-import LightsaberTrail from "../components/LightsaberTrail";
 import StarWarsCrawl from "../components/StarWarsCrawl";
 
 const ibmPlexMono = IBM_Plex_Mono({
@@ -36,7 +35,6 @@ export default function RootLayout({
         <ToastProvider>
           <KeyboardManager />
           <StarWarsCrawl />
-          <LightsaberTrail />
           <Topbar />
           <main className="flex-1 pb-16 pt-4">
             {children}

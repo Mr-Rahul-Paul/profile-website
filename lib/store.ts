@@ -12,12 +12,3 @@ export const useCrawlStore = create<CrawlState>((set) => ({
   closeCrawl: () => set({ isOpen: false }),
 }));
 
-interface TrailState {
-  isActive: boolean;
-  toggleTrail: () => void;
-}
-
-export const useTrailStore = create<TrailState>((set) => ({
-  isActive: false,
-  toggleTrail: () => set((state) => ({ isActive: !state.isActive })),
-}));

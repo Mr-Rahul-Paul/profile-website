@@ -3,13 +3,12 @@
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { useToast } from "./Toast";
-import { useCrawlStore, useTrailStore } from "../lib/store";
+import { useCrawlStore } from "../lib/store";
 
 export default function KeyboardManager() {
   const router = useRouter();
   const { showToast } = useToast();
   const { openCrawl, closeCrawl, isOpen: isCrawlOpen } = useCrawlStore();
-  const { toggleTrail } = useTrailStore();
   
   const keyBuffer = useRef<string>("");
   const konami = "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRight";
@@ -62,8 +61,6 @@ export default function KeyboardManager() {
 
       if (key === "J" && e.shiftKey) {
         openCrawl();
-      } else if (key.toLowerCase() === "j" && !e.shiftKey) {
-        toggleTrail();
       }
 
       if (key.toLowerCase() === "h") router.push("/");
@@ -78,7 +75,7 @@ export default function KeyboardManager() {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [router, showToast, openCrawl, closeCrawl, toggleTrail, isCrawlOpen]);
+  }, [router, showToast, openCrawl, closeCrawl, isCrawlOpen]);
 
   return null;
 }
