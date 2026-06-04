@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #080808;
+  --color-bg-raised: #0d0d0d;
+  --color-border: #141414;
+  --color-border-2: #1e1e1e;
+  --color-muted: #2a2a2a;
+  --color-dim: #444444;
+  --color-sub: #666666;
+  --color-body: #999999;
+  --color-text: #e0e0e0;
+  --color-gold: #c9a84c;
+
+  --font-mono: var(--font-ibm-plex-mono), monospace;
+  --font-sans: var(--font-ibm-plex-sans), sans-serif;
+}
+
+@layer base {
+  :root {
+    --bg: #080808;
+    --bg-raised: #0d0d0d;
+    --border: #141414;
+    --border-2: #1e1e1e;
+    --muted: #2a2a2a;
+    --dim: #444444;
+    --sub: #666666;
+    --body: #999999;
+    --text: #e0e0e0;
+    --gold: #c9a84c;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--body);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+  ::selection {
+    background-color: var(--muted);
+    color: var(--text);
+  }
+}
+
+@layer utilities {
+  .border-b-subtle {
+    border-bottom: 1px solid var(--border);
+  }
+  .border-t-subtle {
+    border-top: 1px solid var(--border);
+  }
+  .border-subtle {
+    border: 1px solid var(--border);
+  }
+  
+  /* Star Wars Crawl */
+  @keyframes crawl {
+    0% { top: 100vh; transform: rotateX(25deg) translateY(0); }
+    100% { top: -100vh; transform: rotateX(25deg) translateY(-200%); }
+  }
+  .animate-crawl {
+    animation: crawl 24s linear forwards;
+  }
+  
+  /* Blinking cursor */
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+}
