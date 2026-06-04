@@ -19,7 +19,7 @@ export default function Avatar() {
         <div className="flex items-center gap-2 text-muted mb-1 text-zinc-300">
           <span>available · Delhi, IN</span>
         </div>
-        <div className="text-neutral-500">arch linux · hyprland</div>
+        <div className="text-neutral-500">Arch Linux · Omarchy</div>
       </div>
     </div>
   );
