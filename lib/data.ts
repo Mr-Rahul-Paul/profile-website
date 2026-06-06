@@ -7,7 +7,7 @@ export const PERSON = {
   timezone: "IST · UTC+5:30",
   college: "IIIT Vadodara",
   batch: "2024–2028",
-  status: "available",
+  status: "available for remote work",
 };
 
 export const STATS = [

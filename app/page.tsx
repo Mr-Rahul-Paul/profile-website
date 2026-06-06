@@ -5,12 +5,12 @@ import { PERSON, EXPERIENCE } from "../lib/data";
 
 export default function Home() {
   return (
-    <div className="max-w-[680px] mx-auto px-6 sm:px-8 ">
+    <div className="max-w-170 mx-auto px-6 sm:px-8 ">
       <Avatar />
 
       <h1 className="text-[30px] font-light text-text mb-1">{PERSON.name}</h1>
       <div className="font-mono text-xs text-neutral-500 mb-8">
-        cs sophomore · systems · open source
+        Computer Science · systems · open source
       </div>
 
       <p className="leading-relaxed mb-8 text-neutral-400">
