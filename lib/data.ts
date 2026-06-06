@@ -145,28 +145,32 @@ export const OSS = [
 export const SKILLS = [
   {
     category: "< Systems />",
-    items: ["Rust", "C++", "Go (learning)", "Python", "Bash"],
+    items: ["Rust", "C++", "Go", "Python", "Bash"],
   },
   {
     category: "< Web />",
-    items: ["TypeScript", "Next.js", "React", "Django", "Node.js"],
+    items: ["TypeScript", "Next.js", "Node.js", "WebSocket", "Django"],
   },
   {
     category: "< Infra />",
-    items: ["Docker", "PostgreSQL", "MongoDB", "Redis", "GCP", "Vercel"],
+    items: ["Docker", "PostgreSQL", "MongoDB", "Redis", "Make", "Vercel"],
   },
   {
     category: "< Mobile />",
-    items: ["Flutter", "Dart", "REST", "WebSocket"],
+    items: ["Flutter", "Dart"],
   },
   {
     category: "< Security />",
     items: [
       "Linux Hardening",
       "YAML Config Analysis",
-      "OverTheWire",
       "TryHackMe",
+      "Network Security",
     ],
+  },
+  {
+    category: "< Computer Graphics />",
+    items: ["Blender", "Substance Painter", "ZBrush"],
   },
 ];
 
