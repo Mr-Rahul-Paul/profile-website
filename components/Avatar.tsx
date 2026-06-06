@@ -17,7 +17,7 @@ export default function Avatar() {
       ></Image>
       <div className="font-mono text-sm">
         <div className="flex items-center gap-2 mb-1 text-zinc-300">
-          <span>available · Delhi, IN</span>
+          <span>Available · Delhi, IN</span>
         </div>
         <div className="text-neutral-500">@_Rahul_Paul · Omarchy</div>
       </div>
