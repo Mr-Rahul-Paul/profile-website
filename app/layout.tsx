@@ -19,9 +19,9 @@ const ibmPlexSans = IBM_Plex_Sans({
 });
 
 const siteUrl = new URL("https://rahulpaul.me");
-const title = "Rahul Paul — Systems & Backend";
+const title = "Rahul Paul";
 const description =
-  "Systems-focused engineer building fast Rust backends and open-source tools across OWASP, FreeCAD, Linux, and high-performance APIs.";
+  "Rahul Paul is a CS student who builds production backend systems, does security research, and ships open-source code.";
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
