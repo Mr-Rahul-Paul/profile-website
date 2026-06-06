@@ -18,9 +18,67 @@ const ibmPlexSans = IBM_Plex_Sans({
   weight: ["300", "400", "500", "600"],
 });
 
+const siteUrl = new URL("https://rahulpaul.me");
+const title = "Rahul Paul — Systems & Backend";
+const description =
+  "Systems-focused engineer building fast Rust backends and open-source tools across OWASP, FreeCAD, Linux, and high-performance APIs.";
+
 export const metadata: Metadata = {
-  title: "Rahul Paul",
-  description: "CS sophomore at IIIT Vadodara. Systems, open source, Rust, Go.",
+  metadataBase: siteUrl,
+  title: {
+    default: title,
+    template: "%s | Rahul Paul",
+  },
+  description,
+  applicationName: "Rahul Paul",
+  authors: [{ name: "Rahul Paul", url: siteUrl }],
+  creator: "Rahul Paul",
+  publisher: "Rahul Paul",
+  keywords: [
+    "Rahul Paul",
+    "systems engineer",
+    "backend engineer",
+    "Rust developer",
+    "open source developer",
+    "OWASP Nest",
+    "FreeCAD",
+    "Axum",
+    "Tokio",
+    "Linux",
+    "high-performance APIs",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: "Rahul Paul",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+    creator: "@_Rahul_Paul",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  category: "technology",
 };
 
 export default function RootLayout({
@@ -29,14 +87,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${ibmPlexMono.variable} ${ibmPlexSans.variable}`}>
+    <html
+      lang="en"
+      className={`${ibmPlexMono.variable} ${ibmPlexSans.variable}`}
+    >
       <body className="antialiased font-sans text-body bg-bg flex flex-col min-h-screen">
         <ToastProvider>
           <KeyboardManager />
           <Topbar />
-          <main className="flex-1 pb-16 pt-5">
-            {children}
-          </main>
+          <main className="flex-1 pb-16 pt-5">{children}</main>
           <Statusbar />
         </ToastProvider>
       </body>
