@@ -20,7 +20,7 @@ const ibmPlexSans = IBM_Plex_Sans({
 
 const siteUrl = new URL("https://rahulpaul.me");
 const title = "Rahul Paul";
-const description = "Systems & Security engineer | OSS. Rahul Paul is a CS student who builds production backend systems, does security research, and ships open-source code.";
+const description = "Rahul Paul is a CS student who builds production backend systems, does security research, and ships open-source code.";
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
