@@ -57,12 +57,21 @@ export const metadata: Metadata = {
     siteName: "Rahul Paul",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: title,
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title,
     description,
     creator: "@_Rahul_Paul",
+    images: ["/twitter-image"],
   },
   robots: {
     index: true,
