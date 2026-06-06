@@ -68,52 +68,38 @@ export const WORK = [
 export const PROJECTS = {
   sys: [
     {
-      name: "async-http-server",
+      name: "Rust-HTTP-Server",
       tags: ["rust", "tokio"],
-      desc: "Async Rust HTTP server. 6,300+ req/sec. Axum + Tokio.",
-      github: "https://github.com/Mr-Rahul-Paul/async-http-server",
+      desc: "Async Rust HTTP server. 6,300+ req/sec. Axum + Tokio. Built in monitoring Prometheus.",
+      github: "https://github.com/Mr-Rahul-Paul/Rust-HTTP-Server",
     },
     {
-      name: "linux-hardening-notes",
-      tags: ["arch"],
-      desc: "Personal hardening runbook. SSH, kernel, auditd. Arch.",
-      github: "https://github.com/Mr-Rahul-Paul",
-    },
-  ],
-  oss: [
-    {
-      name: "owasp/nest",
-      tags: ["django", "react"],
-      desc: "13 merged PRs · +1518/−504 lines · full-stack ISO dateFormatter refactor",
-      github: "https://github.com/owasp/nest",
-    },
-    {
-      name: "FreeCAD",
-      tags: ["c++"],
-      desc: "3 merged C++ PRs: signal handling, clipboard export, TechDraw UI fix",
-      github: "https://github.com/FreeCAD/FreeCAD",
+      name: "TODO-TUI",
+      tags: ["TUI"],
+      desc: "Daily tasks and private thoughts, right in the terminal. ",
+      github: "https://github.com/Mr-Rahul-Paul/TODO-TUI",
     },
   ],
   research: [
     {
       name: "V2X Traffic Prediction",
-      tags: ["paper"],
-      desc: "Co-authored. Accepted at IIT Palakkad · RECCAP 2026.",
+      tags: ["research paper"],
+      desc: "Co-authored. Accepted at IIT Palakkad · RECCAP 2026. IEEE",
       github: "#",
     },
     {
       name: "VQE Implementation",
-      tags: ["quantum"],
+      tags: ["quantum", "implementation"],
       desc: "Hackathon winner.",
-      github: "#",
+      github: "https://github.com/Mr-Rahul-Paul/quantum-sim-HackIIITV",
     },
   ],
   web: [
     {
-      name: "filmylog-api-ref",
-      tags: ["rest", "socket.io"],
-      desc: "Internal ChatService API reference doc (REST + Socket.IO)",
-      github: "#",
+      name: "My-Blogs",
+      tags: ["TypeScript", "documentation"],
+      desc: "A personal repository containing technical blogs, system design notes, and development documentation.",
+      github: "https://github.com/Mr-Rahul-Paul/My-Blogs",
     },
   ],
 };
