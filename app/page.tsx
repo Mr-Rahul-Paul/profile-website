@@ -29,26 +29,27 @@ export default function Home() {
           target="_blank"
           className="hover:text-text hover:border-white border border-neutral-500 px-3 py-1 rounded-[3px]"
         >
-          github
+          Github
         </a>
         <a
           href={`https://linkedin.com/in/${PERSON.linkedin}`}
           target="_blank"
           className="hover:text-text hover:border-white border border-neutral-500 px-3 py-1 rounded-[3px]"
         >
-          linkedin
+          Linkedin
         </a>
         <a
-          href="#"
+          href="https://x.com/_Rahul_Paul"
+          target="_blank"
           className="hover:text-text hover:border-white border border-neutral-500 px-3 py-1 rounded-[3px]"
         >
-          cv.pdf
+          X (twitter)
         </a>
         <a
           href={`mailto:${PERSON.email}`}
           className="hover:text-text hover:border-white border border-neutral-500 px-3 py-1 rounded-[3px]"
         >
-          mail
+          Gmail
         </a>
       </div>
 
