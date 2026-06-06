@@ -19,7 +19,7 @@ export const STATS = [
 export const EXPERIENCE = [
   {
     date: "May 2026 - Present",
-    role: "Security Intern",
+    role: "Security Engineering Intern",
     org: "Mine2.io",
     notes:
       "Hardened cloud/OS baselines to remediate faulty detection assets and validated AWS/K8s deception pipelines via strace and kubectl",
