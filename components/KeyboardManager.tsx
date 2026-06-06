@@ -2,11 +2,9 @@
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { useToast } from "./Toast";
 
 export default function KeyboardManager() {
   const router = useRouter();
-  const { showToast } = useToast();
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -15,13 +13,7 @@ export default function KeyboardManager() {
 
       const key = e.key;
 
-      if (e.metaKey || e.ctrlKey) {
-        if (key.toLowerCase() === "k") {
-          e.preventDefault();
-          showToast("command palette coming soon");
-        }
-        return;
-      }
+      if (e.metaKey || e.ctrlKey) return;
 
       if (key.toLowerCase() === "h") router.push("/");
       if (key.toLowerCase() === "w") router.push("/work");
@@ -35,7 +27,7 @@ export default function KeyboardManager() {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [router, showToast]);
+  }, [router]);
 
   return null;
 }

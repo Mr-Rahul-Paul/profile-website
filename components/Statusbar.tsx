@@ -8,7 +8,6 @@ export default function Statusbar() {
         <span>[S] stack</span>
         <span>[C] contact</span>
         <span>[G] github</span>
-        <span>[⌘K] search</span>
       </div>
     </footer>
   );
