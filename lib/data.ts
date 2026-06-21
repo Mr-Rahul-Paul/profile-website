@@ -17,6 +17,13 @@ export const STATS = [
 ];
 
 export const EXPERIENCE = [
+   {
+    date: "June 2026 - Present",
+    role: "Intern",
+    org: "OWASP [Open Web Application Security Project] - Nest",
+    notes:
+      "Contributed to OWASP Nest with a focus on NestBot, platform maintenance, feature development, bug fixes, local development workflows, and improving Slack/GitHub integration reliability.",
+  },
   {
     date: "May 2026 - Present",
     role: "Security Engineering Intern",
@@ -25,7 +32,7 @@ export const EXPERIENCE = [
       "Hardened cloud/OS baselines to remediate faulty detection assets and validated AWS/K8s deception pipelines via strace and kubectl",
   },
   {
-    date: "feb 2026 - Present",
+    date: "Feb 2026 - Present",
     role: "Software Developer Intern",
     org: "Filmylog.com",
     notes:
