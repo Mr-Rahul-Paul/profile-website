@@ -1,5 +1,5 @@
 # Rahul Paul
 
-Personal website for Rahul Paul.
+My personal website.
 
-Terminal-style portfolio with work, open-source, stack, and contact pages.
+Mostly work, open source, projects, and ways to reach me.
