@@ -14,7 +14,8 @@ export default function Home() {
       </div>
 
       <p className="leading-relaxed mb-8 text-neutral-400">
-        From India. CS @{" "}
+        From India. Intern @{" "}
+        <strong className="text-text font-normal">OWASP</strong>. CS @{" "}
         <strong className="text-text font-normal">IIIT Vadodara</strong>.
         Open-source contributor and former 3D artist. Building with{" "}
         <strong className="text-text font-normal">Rust</strong> and{" "}
