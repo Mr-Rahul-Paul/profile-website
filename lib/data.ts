@@ -11,7 +11,7 @@ export const PERSON = {
 };
 
 export const STATS = [
-  { value: "13", label: "merged PRs · owasp" },
+  { value: "23", label: "prs · owasp nest" },
   { value: "3", label: "merged PRs · FreeCAD" },
   { value: "98.5", label: "JEE percentile" },
 ];
@@ -19,17 +19,17 @@ export const STATS = [
 export const EXPERIENCE = [
    {
     date: "June 2026 - Present",
-    role: "Intern",
-    org: "OWASP [Open Web Application Security Project] - Nest",
+    role: "Software Engineer Intern",
+    org: "OWASP foundation",
     notes:
       "Contributed to OWASP Nest with a focus on NestBot, platform maintenance, feature development, bug fixes, local development workflows, and improving Slack/GitHub integration reliability.",
   },
   {
-    date: "May 2026 - Present",
-    role: "Security Engineering Intern",
+    date: "May 2026 – July 2026",
+    role: "Security Research Intern",
     org: "Mine2.io",
     notes:
-      "Hardened cloud/OS baselines to remediate faulty detection assets and validated AWS/K8s deception pipelines via strace and kubectl",
+      "M2Fortify hardening scanner research, cross-platform deception mine validation, competitive benchmarking vs Canarytokens/Tracebit, and NIST CSF 2.0 compliance mapping.",
   },
   {
     date: "Feb 2026 - Present",
@@ -38,31 +38,42 @@ export const EXPERIENCE = [
     notes:
       "Integrated 20+ APIs to deliver auth, real-time chat, sockets and multimedia workflows in a production Flutter based social platform.",
   },
-  {
-    date: "Dec 2025 - Present",
-    role: "Open Source",
-    org: "OWASP Nest · FreeCAD · summer of bitcoin",
-    notes:
-      "Contributed 16+ merged PRs across OWASP Nest and FreeCAD, delivering refactors, platform enhancements, and core open-source improvements.",
-  },
+  // {
+  //   date: "Dec 2025 - Present",
+  //   role: "Open Source",
+  //   org: "OWASP Nest · FreeCAD · summer of bitcoin",
+  //   notes:
+  //     "Contributed 26 pull requests across OWASP Nest and FreeCAD (18 merged + 5 open on Nest, 3 merged on FreeCAD), delivering refactors, platform enhancements, and core open-source improvements.",
+  // },
 ];
 
 export const WORK = [
   {
-    org: "MINE2",
-    role: "Security Intern",
-    date: "May 2026 – now",
+    org: "OWASP Nest",
+    role: "Software Engineer Intern",
+    date: "June 2026 – present",
     location: "Remote",
     bullets: [
-      "Executed black-box validation of the core product binary across isolated Linux environments, triggering 8+ deception mines to evaluate real-time alerting efficacy.",
-      "Reduced theoretical attack surface by mapping linux hardening vectors (pam policies, ssh config, aslr, sysctl kernel params, suid/sgid bit auditing) into a structured remediation report, directly informing the product team's hardening roadmap",
-      "Audited binary interaction with system infrastructure using low-level diagnostics (strace, systemctl, kubectl) to identify non-functioning detection assets across PostgreSQL, MongoDB, and AWS networks.",
+      "23 PRs on OWASP Nest (18 merged, 5 open) across Django/GraphQL backend, TypeScript frontend, Terraform/AWS infra, and GitHub Actions CI.",
+      "AWS/Terraform: split bootstrap state by environment (#5205), migrate runtime secrets from SSM to AWS Secrets Manager (#5141), and ship dependabot security remediation (#5365, #5370).",
+      "Backend: multi-category event filtering on list_events (#4144), Algolia cache_key collision fix for concurrent search (#3825), Django entity model cleanup (#3793); open — Sponsors Program (#4520), Slack reaction moderation (#5034).",
+    ],
+  },
+  {
+    org: "Mine2.io",
+    role: "Security Research Intern",
+    date: "May 2026 – July 2026",
+    location: "Remote",
+    bullets: [
+      // "Authored M2Fortify scanner enhancement proposal — OS-aware YAML checks, role-based scan profiles, sensitive-service audits (SSH, sudo, Docker, cron), and deep credential-path scanning with concrete remediation commands.",
+      "Validated deception mines across Arch Linux, CentOS, Windows, and Docker Ubuntu — deployed 15 active mines, ran attacker-style triggers (aws sts, psql, mongosh/pymongo, ssh, strace, kubectl), and documented pass/fail outcomes in a master test matrix.",
+      "Benchmarked mine2 against Canarytokens.org and Tracebit; ran M2Fortify quality scans (36 checks, 142 findings) and mapped capabilities to NIST CSF 2.0 to prioritize trigger bugs and product gaps.",
     ],
   },
   {
     org: "Filmylog",
     role: "Flutter Developer",
-    date: "2026 – present",
+    date: "Feb 2026 – Present",
     location: "Remote",
     bullets: [
       "Architected and shipped a real-time websocket chat subsystem from scratch — full event protocol, server-side handlers, and flutter client integration, delivered as a single-owner implementation.",
@@ -116,7 +127,7 @@ export const OSS = [
     status: "active",
     tags: "Typescript · Django · GraphQL · CI/CD · Make",
     stats:
-      "• Merged 13 pull requests across the platform, delivering full-stack features like the complete Sponsors Program infrastructure and breadcrumb route interceptors.\n• Fixed a silent caching collision in Algolia search that was serving broken query results to concurrent users.",
+      "• 23 pull requests on OWASP Nest (18 merged, 5 open) — security fixes, E2E stabilization, dependency docs, Algolia cache fix, mentorship breadcrumbs, and more.\n• Open: Sponsors Program (#4520), Slack moderation alerts, Terraform/Secrets Manager infra work.\n• Fixed a silent caching collision in Algolia search (#3825) that was serving broken query results to concurrent users.",
     mentors: "Ark (Arkadii Yakovets), Kate (Kateryna Golovanova)",
     progress: 80,
   },
@@ -125,7 +136,7 @@ export const OSS = [
     status: "2025",
     tags: "C++ · qt framework",
     stats:
-      "• Contributed 3 patches to the core release workbench, including a critical performance fix that eliminated infinite Qt signal/slot loops in the Image Plane settings.\n• Developed a native copy-to-clipboard utility inside core Unit Test dialogs to streamline developer debugging workflows.",
+      "• 3 merged PRs to FreeCAD core — Image Plane performance fix (#26390), Unit Test copy-to-clipboard (#25979), TechDraw UI fix (#24866).\n• Critical performance fix that eliminated infinite Qt signal/slot loops in Image Plane settings.\n• Native copy-to-clipboard utility in Unit Test dialogs to streamline developer debugging workflows.",
     mentors: "",
     progress: 100,
   },
@@ -149,43 +160,40 @@ export const OSS = [
 // },
 // ];
 
-export const SKILLS = [
-  {
-    category: "< Systems />",
-    items: ["Rust", "C++", "Go", "Python", "Bash"],
-  },
-  {
-    category: "< Web />",
-    items: ["TypeScript", "Next.js", "Node.js", "WebSocket", "Django"],
-  },
-  {
-    category: "< Infra />",
-    items: ["Docker", "PostgreSQL", "MongoDB", "Redis", "Make", "Vercel"],
-  },
-  {
-    category: "< Mobile />",
-    items: ["Flutter", "Dart"],
-  },
-  {
-    category: "< Security />",
-    items: [
-      "Linux Hardening",
-      "YAML Config Analysis",
-      "TryHackMe",
-      "Network Security",
-    ],
-  },
-  {
-    category: "< Computer Graphics />",
-    items: ["Blender", "Substance Painter", "ZBrush"],
-  },
-];
-
-export const LANG_BARS = [
-  { lang: "Rust", percent: 88, label: "primary" },
-  { lang: "TypeScript", percent: 78, label: "owasp nest" },
-  { lang: "C++", percent: 65, label: "freecad PRs" },
-  { lang: "Python", percent: 70, label: "django / scripts" },
-  { lang: "Go", percent: 28, label: "in progress · CNCF" },
-  { lang: "Dart", percent: 60, label: "filmylog" },
-];
+export const STACK = {
+  languages: [
+    { lang: "Rust", percent: 100, context: "axum · tokio · tui" },
+    { lang: "TypeScript", percent: 100, context: "owasp nest · next.js" },
+    { lang: "Python", percent: 100, context: "django · graphql · scripts" },
+    { lang: "C++", percent: 100, context: "freecad" },
+    { lang: "Dart", percent: 100, context: "filmylog · flutter" },
+    { lang: "Go", percent: 100, context: "learning" },
+  ],
+  groups: [
+    {
+      label: "backend",
+      items: ["Django", "GraphQL", "Axum", "Tokio", "WebSocket", "Node.js"],
+    },
+    {
+      label: "infra",
+      items: [
+        "Terraform",
+        "AWS",
+        "Docker",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Make",
+        "GitHub Actions",
+      ],
+    },
+    {
+      label: "frontend",
+      items: ["Next.js", "React"],
+    },
+    {
+      label: "security",
+      items: ["Linux hardening", "deception testing", "strace · kubectl"],
+    },
+  ],
+};

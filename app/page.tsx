@@ -17,7 +17,7 @@ export default function Home() {
         From India. Intern @{" "}
         <strong className="text-text font-normal">OWASP</strong>. CS @{" "}
         <strong className="text-text font-normal">IIIT Vadodara</strong>.
-        Open-source contributor and former 3D artist. Building with{" "}
+        Open-source contributor and previously a 3D artist. Building with{" "}
         <strong className="text-text font-normal">Rust</strong> and{" "}
         <strong className="text-text font-normal">TypeScript</strong> while
         contributing to open source and tinkering on Linux.
@@ -75,7 +75,7 @@ export default function Home() {
             key={i}
             className="grid grid-cols-[80px_1fr] gap-4 items-baseline text-sm"
           >
-            <div className="text-neutral-400 font-montext-dim o text-xs">
+            <div className="text-neutral-400 font-mono text-dim text-xs">
               {exp.date}
             </div>
             <div>

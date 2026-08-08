@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "bash scripts/dev.sh",
+    "build": "bash scripts/node-run.sh ./node_modules/next/dist/bin/next build",
+    "start": "bash scripts/node-run.sh ./node_modules/next/dist/bin/next start",
+    "lint": "bash scripts/node-run.sh ./node_modules/eslint/bin/eslint.js ."
   },
   "dependencies": {
     "clsx": "^2.1.1",
