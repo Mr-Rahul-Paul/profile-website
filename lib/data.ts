@@ -103,7 +103,7 @@ export const PROJECTS = {
       name: "V2X Traffic Prediction",
       tags: ["research paper"],
       desc: "Co-authored. Accepted at IIT Palakkad · RECCAP 2026. IEEE",
-      github: "#",
+      github: "https://github.com/Mr-Rahul-Paul/v2x-traffic-flow-prediction",
     },
     {
       name: "VQE Implementation",

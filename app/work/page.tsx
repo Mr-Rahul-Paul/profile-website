@@ -59,10 +59,14 @@ export default function WorkPage() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {PROJECTS[activeTab].map((project, i) => (
-          <div
-            key={i}
-            className="border border-neutral-700 rounded-[3px] p-5 hover:bg-bg-raised transition-colors group flex flex-col h-full"
+        {PROJECTS[activeTab].map((project) => (
+          <a
+            key={project.name}
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`View ${project.name} on GitHub`}
+            className="border border-neutral-700 rounded-[3px] p-5 hover:bg-bg-raised focus-visible:bg-bg-raised focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text transition-[background-color,transform] duration-150 active:scale-[0.96] group flex flex-col h-full"
           >
             <div className="flex items-start justify-between mb-3">
               <h3 className="text-text font-mono text-sm">{project.name}</h3>
@@ -80,14 +84,10 @@ export default function WorkPage() {
             <p className="text-sm text-sub leading-relaxed mb-4 flex-1">
               {project.desc}
             </p>
-            <a
-              href={project.github}
-              target="_blank"
-              className="font-mono text-xs text-dim group-hover:text-text transition-colors flex items-center gap-1"
-            >
+            <span className="font-mono text-xs text-dim group-hover:text-text group-focus-visible:text-text transition-colors flex items-center gap-1">
               ↗ github
-            </a>
-          </div>
+            </span>
+          </a>
         ))}
       </div>
     </div>
