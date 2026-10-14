@@ -1,6 +1,7 @@
 "use client";
 
 import Avatar from "../components/Avatar";
+import AgeCounter from "../components/AgeCounter";
 import { PERSON, EXPERIENCE } from "../lib/data";
 
 export default function Home() {
@@ -8,7 +9,12 @@ export default function Home() {
     <div className="max-w-170 mx-auto px-6 sm:px-8 ">
       <Avatar />
 
-      <h1 className="text-[30px] font-light text-text mb-1">{PERSON.name}</h1>
+      <h1 className="flex flex-wrap items-baseline gap-x-2 text-text mb-1">
+        <span className="text-[30px] font-light">{PERSON.name}</span>
+        <span className="font-mono text-sm font-normal text-neutral-500">
+          <AgeCounter />
+        </span>
+      </h1>
       <div className="font-mono text-xs text-neutral-500 mb-8">
         Computer Science · systems · open source
       </div>
