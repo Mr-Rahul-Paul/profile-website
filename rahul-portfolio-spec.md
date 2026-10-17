@@ -380,7 +380,7 @@ SEE ALSO
        github(1), linkedin(1), owasp-nest(7), cncf-harbor(7)
 
 AUTHOR
-       Rahul Paul <rpaul29120@gmail.com>
+       Rahul Paul <hello.rahulpaul@gmail.com>
        IIIT Vadodara · Ahmedabad, IN
 
                           June 2026                          RAHUL(1)
@@ -400,7 +400,7 @@ Terminal block only:
 ```bash
 $ cat contact.json
 {
-  "email"    : "rpaul29120@gmail.com",
+  "email"    : "hello.rahulpaul@gmail.com",
   "github"   : "github.com/Mr-Rahul-Paul",
   "linkedin" : "linkedin.com/in/rahul-paul-0109bb219",
   "open_to"  : ["oss collab", "mentorship", "internships", "research"],
@@ -568,7 +568,7 @@ All content lives in `lib/data.ts` as typed constants so the agent never hardcod
 export const PERSON = {
   name: "Rahul Paul",
   handle: "Mr-Rahul-Paul",
-  email: "rpaul29120@gmail.com",
+  email: "hello.rahulpaul@gmail.com",
   linkedin: "rahul-paul-0109bb219",
   location: "Ahmedabad, IN",
   timezone: "IST · UTC+5:30",
