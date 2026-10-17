@@ -2,6 +2,7 @@
 
 import Avatar from "../components/Avatar";
 import AgeCounter from "../components/AgeCounter";
+import { ArrowUpRight, Code2, Mail } from "lucide-react";
 import { PERSON, EXPERIENCE } from "../lib/data";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
       <Avatar />
 
       <h1 className="flex flex-wrap items-baseline gap-x-2 text-text mb-1">
-        <span className="text-[30px] font-light">{PERSON.name}</span>
+        <span className="text-[42px] sm:text-[56px] font-normal tracking-tight leading-tight">{PERSON.name}</span>
         <span className="font-mono text-sm font-normal text-neutral-500">
           <AgeCounter />
         </span>
@@ -30,33 +31,40 @@ export default function Home() {
       </p>
 
       {/* Links Row */}
-      <div className="flex flex-wrap items-center gap-3 font-mono text-xs text-neutral-500 mb-16">
+      <div className="flex flex-wrap items-center gap-3 font-mono text-xs text-neutral-300 mb-16">
         <a
           href="https://github.com/Mr-Rahul-Paul"
           target="_blank"
-          className="hover:text-text hover:border-white border border-neutral-500 px-3 py-1 rounded-[3px]"
+          rel="noopener noreferrer"
+          className="inline-flex min-h-10 items-center gap-2 border border-neutral-700 bg-bg-raised px-3 py-2 rounded-[3px] transition-colors hover:text-text hover:border-neutral-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-text"
         >
-          Github
+          <Code2 size={15} aria-hidden="true" />
+          GitHub
         </a>
         <a
           href={`https://linkedin.com/in/${PERSON.linkedin}`}
           target="_blank"
-          className="hover:text-text hover:border-white border border-neutral-500 px-3 py-1 rounded-[3px]"
+          rel="noopener noreferrer"
+          className="inline-flex min-h-10 items-center gap-2 border border-neutral-700 bg-bg-raised px-3 py-2 rounded-[3px] transition-colors hover:text-text hover:border-neutral-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-text"
         >
-          Linkedin
+          LinkedIn
+          <ArrowUpRight size={14} aria-hidden="true" />
         </a>
         <a
           href="https://x.com/_Rahul_Paul"
           target="_blank"
-          className="hover:text-text hover:border-white border border-neutral-500 px-3 py-1 rounded-[3px]"
+          rel="noopener noreferrer"
+          className="inline-flex min-h-10 items-center gap-2 border border-neutral-700 bg-bg-raised px-3 py-2 rounded-[3px] transition-colors hover:text-text hover:border-neutral-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-text"
         >
-          X (twitter)
+          X (Twitter)
+          <ArrowUpRight size={14} aria-hidden="true" />
         </a>
         <a
           href={`mailto:${PERSON.email}`}
-          className="hover:text-text hover:border-white border border-neutral-500 px-3 py-1 rounded-[3px]"
+          className="inline-flex min-h-10 items-center gap-2 border border-neutral-700 bg-bg-raised px-3 py-2 rounded-[3px] transition-colors hover:text-text hover:border-neutral-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-text"
         >
-          Gmail
+          <Mail size={15} aria-hidden="true" />
+          Email
         </a>
       </div>
 
@@ -94,6 +102,21 @@ export default function Home() {
           </div>
         ))}
       </div>
+
+      <section className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <h2 className="text-xl text-text">Have something in mind?</h2>
+          <p className="mt-2 text-[13px] leading-relaxed text-neutral-400">
+            Open to internships, research, and open-source collaborations.
+          </p>
+        </div>
+        <a
+          href={`mailto:${PERSON.email}`}
+          className="inline-flex min-h-10 shrink-0 items-center gap-2 text-[13px] text-[#9cbadb] underline underline-offset-4 decoration-[#9cbadb66] hover:decoration-[#9cbadb] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-text"
+        >
+          Say hello <ArrowUpRight size={16} aria-hidden="true" />
+        </a>
+      </section>
 
       {/* NOW */}
       <div className="text-center text-[10px] font-mono text-neutral-400 mb-8 uppercase tracking-widest border-b border-border pb-4">
