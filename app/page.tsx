@@ -11,7 +11,7 @@ export default function Home() {
       <Avatar />
 
       <h1 className="flex flex-wrap items-baseline gap-x-2 text-text mb-1">
-        <span className="text-[42px] sm:text-[56px] font-normal tracking-tight leading-tight">{PERSON.name}</span>
+        <span className="text-[40px] sm:text-[52px] font-normal tracking-tight leading-tight">{PERSON.name}</span>
         <span className="font-mono text-sm font-normal text-neutral-500">
           <AgeCounter />
         </span>

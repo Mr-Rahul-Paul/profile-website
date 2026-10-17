@@ -19,7 +19,15 @@ export default function Avatar() {
         <div className="flex items-center gap-2 mb-1 text-zinc-300">
           <span>Available · Delhi, IN</span>
         </div>
-        <div className="text-neutral-500">@_Rahul_Paul · Omarchy</div>
+        <div className="text-neutral-500">
+          <a
+            href="https://x.com/_Rahul_Paul"
+            className="hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-text"
+          >
+            @_Rahul_Paul
+          </a>
+          {" · Omarchy"}
+        </div>
       </div>
     </div>
   );
