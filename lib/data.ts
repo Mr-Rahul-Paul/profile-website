@@ -1,7 +1,7 @@
 export const PERSON = {
   name: "Rahul Paul",
   handle: "Mr-Rahul-Paul",
-  email: "rpaul29120@gmail.com",
+  email: "hello.rahulpaul@gmail.com",
   linkedin: "rahul-paul-0109bb219",
   location: "Ahmedabad, IN",
   timezone: "IST · UTC+5:30",

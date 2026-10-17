@@ -48,7 +48,6 @@ export default function Home() {
           className="inline-flex min-h-10 items-center gap-2 border border-neutral-700 bg-bg-raised px-3 py-2 rounded-[3px] transition-colors hover:text-text hover:border-neutral-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-text"
         >
           LinkedIn
-          <ArrowUpRight size={14} aria-hidden="true" />
         </a>
         <a
           href="https://x.com/_Rahul_Paul"
@@ -57,7 +56,6 @@ export default function Home() {
           className="inline-flex min-h-10 items-center gap-2 border border-neutral-700 bg-bg-raised px-3 py-2 rounded-[3px] transition-colors hover:text-text hover:border-neutral-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-text"
         >
           X (Twitter)
-          <ArrowUpRight size={14} aria-hidden="true" />
         </a>
         <a
           href={`mailto:${PERSON.email}`}
